@@ -1,30 +1,16 @@
 import App from "./c.js";
-
-//const app=new App(data);
-
 const WIDTH=window.innerWidth
 const main=document.getElementById('h');
-if(WIDTH<=500){
-//main.style.width=(WIDTH*0.75)+"px";
-console.log(WIDTH);
-}
-
 const input=document.querySelectorAll('input');
 const btn1=document.getElementById('btn-1');
 const btn2=document.getElementById('btn-2');
-
 const moy=document.querySelectorAll('.moy');
 const div=document.querySelectorAll('.div');
-
-
 const app=new App(input);
 app.getData(input);
-//console.log(app.arr);
 function setData(){}
 input.forEach((element,index) => {
     element.addEventListener('change',()=>{
-        
-
         moy[0].innerHTML='<span class="moy_mod">'+app.t1(0,1);
         moy[1].innerHTML='<span class="moy_mod" >'+app.t1(2,3);
         moy[2].innerHTML='<span class="moy_mod" >'+app.t1(4,5);
@@ -39,28 +25,19 @@ input.forEach((element,index) => {
         moy[11].innerHTML='<span class="moy_mod">'+input[15].value;
         moy[12].innerHTML='<span class="moy-UE">'+input[15].value;
         moy[13].innerHTML='<span>'+app.moy_S(document.querySelectorAll('.moy-UE'))
-
         app.coff(document.querySelectorAll('.moy_mod'))
         app.coff1(document.querySelectorAll('.moy_mod'))
         app.coffF(document.querySelectorAll('.moy_mod'))
-        //console.log(app.coff_UED);
-        //console.log(app.coff_UET2);
     })
 });
-
-
 const moy2=document.querySelectorAll('.moy-2');
-
-//console.log(moy2);
 btn1.addEventListener('click',()=>{
 const moy3=document.querySelectorAll('.moy_mod');
 const card=document.querySelector('.card')
 const title=document.getElementById('title')
-
 if(app.moy_S(document.querySelectorAll('.moy-UE'))>0){
 for (let index = 0; index < 2; index++) {
-div[index].style.display='flex'    
-
+div[index].style.display='flex';    
 }
 }
 moy2[0].innerHTML="<span>"+app.UEF(moy);
@@ -91,17 +68,13 @@ if(moy111>=10){
 }
 
 })
-
 document.querySelector('.div1').addEventListener('click',()=>{
     for (let index = 0; index < 2; index++) {
         div[index].style.display='none'    
     }
 })
 btn2.addEventListener('click',()=>{
-
     for (let index = 0; index < 2; index++) {
     div[index].style.display='none'    
-    }
-    
+    }  
 })
-
