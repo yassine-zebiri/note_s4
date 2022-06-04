@@ -7,7 +7,7 @@ export default class App{
         this.coff_UED=0;
         this.coff_UET2=0;
         data.forEach((item)=>{
-            item.value=10;
+            item.value=0;
             item.max=20;
             item.min=0;
             this.arr.push(item.value)
