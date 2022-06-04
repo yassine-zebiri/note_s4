@@ -46,14 +46,12 @@ export default class App{
         }
         return (coff);
     }
-
     UEF(m){
         let arr=[];
         for (let index = 0; index <4; index++) {
             arr.push(Number(m[index].textContent));
         }
-        return (((arr[0]*3+arr[1]*3+arr[2]*2+arr[3]*2)/10).toFixed(2));
-        
+        return (((arr[0]*3+arr[1]*3+arr[2]*2+arr[3]*2)/10).toFixed(2));     
     }
     UEM(m){
         let arr=[];
@@ -69,7 +67,6 @@ export default class App{
         });
        // console.log(arr);
         return ((arr[0]*6.67+arr[1]*2.33+arr[2]*0.67+arr[3]*0.33)/10).toFixed(2);
-
     }
     coff(m){
         let coff=0;
@@ -84,8 +81,5 @@ export default class App{
         }else{
             return (coff);
         }
-        
-
-    }
-    
+    }    
 }
