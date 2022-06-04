@@ -30,7 +30,7 @@ export default class App{
         let arr=[2,3,3]
         let coff=0
         for (let index = 4; index < 7; index++) {
-            if(Number(m[index].textContent)>10 && this.coff_UEM<8){
+            if(Number(m[index].textContent)>=10 && this.coff_UEM<8){
                 coff+=arr[index-4];
             }
         }
@@ -40,7 +40,7 @@ export default class App{
         let arr=[6,6,4,4]
         let coff=0
         for (let index = 0; index < 4; index++) {
-            if(Number(m[index].textContent)>10 && this.coff_UEM<8){
+            if(Number(m[index].textContent)>=10 && this.coff_UEM<8){
                 coff+=arr[index];
             }
         }
@@ -75,7 +75,7 @@ export default class App{
         let coff=0;
         let arr2=[6,6,4,4,2,3,3,2,1]
         for (let index = 0; index < m.length; index++) {
-            if(Number(m[index].textContent)>10 ){
+            if(Number(m[index].textContent)>=10 ){
                 coff+=arr2[index];
             }
         }
