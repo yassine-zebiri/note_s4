@@ -72,13 +72,13 @@ input[14].value<10?moy2[5].innerHTML=0:moy2[5].innerHTML=2;
 moy2[6].innerHTML="<span>"+input[15].value;
 input[15].value<10?moy2[7].innerHTML=0:moy2[7].innerHTML=1;
 moy2[8].innerHTML="<span>"+app.moy_S(document.querySelectorAll('.moy-UE'))
-app.moy_S(document.querySelectorAll('.moy-UE'))>10?moy2[9].innerHTML=30:moy2[9].innerHTML="<span>"+app.coff(moy3);
+app.moy_S(document.querySelectorAll('.moy-UE'))>=10?moy2[9].innerHTML=30:moy2[9].innerHTML="<span>"+app.coff(moy3);
 const moy111=app.moy_S(document.querySelectorAll('.moy-UE'));
-if(moy111>10){
+if(moy111>=10){
     card.style.background="rgba(29, 170, 29, 0.845)"
     btn2.style.background="rgba(29, 170, 29, 0.845)"
     title.innerText="نتائج  جيدة"
-    if(moy111>15){
+    if(moy111>=15){
         title.innerText="نتائج  جيدة جدا"
     }
 }else if(moy111<10){
